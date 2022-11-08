@@ -1,6 +1,6 @@
 <h3>JavaScript Data Types:</h3>
 
-JavaScript has two types of data types: Primitive and Complex
+JavaScript has two types of data types: Primitive and Complex.
 
 
 <h4>Primitive Data Types:</h4>
@@ -36,4 +36,4 @@ JavaScript has two types of data types: Primitive and Complex
     * To access a object’s property, we can use the dot notation (`.`) or the array-like notation (`[]`).
 
 
-Note: To get the current type of the value that the variable stores, you use the `typeof` operator
+Note: To get the current type of the value that the variable stores, you use the `typeof` operator.
