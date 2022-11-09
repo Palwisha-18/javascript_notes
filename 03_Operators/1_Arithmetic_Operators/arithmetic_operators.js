@@ -81,4 +81,3 @@ let power = {
   
   currentPower = power * 1.5; 
   console.log(currentPower); // 1500
-  
