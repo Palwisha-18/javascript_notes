@@ -13,7 +13,7 @@ console.log(result); // 8n
 
 // unary operator immediately before the base number gives syntax error
 
-let result = -2**3; // SyntaxErroe
+let result = -2**3; // SyntaxError
 
 let result = (-2)**3; // correct method
 console.log(result); // -8
