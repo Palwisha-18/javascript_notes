@@ -1,6 +1,6 @@
 <h3>JavaScript Data Types:</h3>
 
-JavaScript has two types of data types: Primitive and Complex.
+JavaScript has two data types: Primitive and Complex.
 
 
 <h4>Primitive Data Types:</h4>
@@ -17,7 +17,7 @@ JavaScript has two types of data types: Primitive and Complex.
     * the NaN does not equal any value, including itself.
 - string
     * a sequence of zero or more characters. It begins and ends with either a single quote(`'`) or a double quote (`"`).
-    * they are immutable in JavaScript. e.g, characters of an existing string cannot be chamged
+    * they are immutable in JavaScript. e.g, characters of an existing string cannot be changed
     * `+` can be used to concatenate strings.
 - boolean
     * has two literal values: `true` and `false` in lowercase.

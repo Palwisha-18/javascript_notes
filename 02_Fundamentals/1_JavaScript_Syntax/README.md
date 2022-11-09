@@ -13,7 +13,7 @@
     * curly braces (`{}`) are used to form a block.
     * it contains zero or more statements.
 
-- Identifers
+- Identifiers
     * are names that we choose for variables, functions, classes, etc.
     * start with a letter (`a-z`, or `A-Z`), an underscore ( `_` ), or a dollar sign (`$`) and is followed by a sequence of characters including (`a-z`, `A-Z`), numbers (`0-9`), underscores ( `_` ), and dollar signs (`$`).
     * are case-sensitive. e.g, `result` is different from `Result`
