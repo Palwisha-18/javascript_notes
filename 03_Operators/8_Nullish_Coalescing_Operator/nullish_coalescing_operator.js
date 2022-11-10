@@ -4,7 +4,7 @@ const name = null ?? 'John';
 console.log(name); // 'John'
 
 const age = undefined ?? 28;
-console.log(age);
+console.log(age); // 28
 
 
 // nullish coalescing operator is short-circuited

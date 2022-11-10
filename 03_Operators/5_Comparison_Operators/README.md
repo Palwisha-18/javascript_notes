@@ -37,3 +37,6 @@ Compare NaN with other values
 
 Using Strict and Not Strict Equal:
 * these operators do not convert the operand before comparison. 
+
+Difference between equal (`==`) and strict equal (`===`):
+* `==` compares only the value and not the data-type. Whereas, `===` compares both value and data-type.

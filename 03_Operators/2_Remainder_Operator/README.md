@@ -7,7 +7,7 @@
         1. convert the value to a number using the Number() function.
         2. apply the remainder function.
 
-- Modulos
+- Modulo
     * in JavaScript can be calculated using this expression: `((dividend % divisor) + divisor) % divisor`
     * if the division and divisor have the same sign, the remainder and modulo operators return the same result. Otherwise, they return different results.
     

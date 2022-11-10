@@ -34,14 +34,14 @@ console.log(remainder); // 0
 let remainder = '10' % 3;
 console.log(remainder); // 1
 
-// difference between remainder and modulos
+// difference between remainder and modulo
 
 const mod = (dividend, divisor) => ((dividend % divisor) + divisor) % divisor;
 
-// dividen and divisor have the same sign
+// dividend and divisor have the same sign
 console.log('remainder:', 5 % 3); // 2
 console.log('modulo:', mod(5, 3)); // 2
 
-// dividen and divisor have the different signs
+// dividend and divisor have the different signs
 console.log('remainder:', -5 % 3); // -2
 console.log('modulo:', mod(-5, 3)); // 1
