@@ -185,6 +185,21 @@ for (let i = 0; i < 5; i++) {
 } // 0 1 2
 
 
+// label statement with break
+
+outer: for (let i = 1; i <= 3; i++) { // outer is the label
+  for (let j = 1; j <= 3; j++) {
+    if (i + j == 4) {
+      break outer; // breaks outer loop
+    }
+    console.log(i, j);
+  }
+} 
+/* 
+1 1
+1 2
+*/
+
 // continue statement
 
 for (let i = 0; i < 10; i++) {
