@@ -47,6 +47,6 @@ Class is a blueprint for creating objects. A class encapsulates data and functio
     * are accessible only inside the class, not from outside of the class or subclasses.
     * the `in` operator to check if an object has a private field.
 
-- Private Methodds:
+- Private Methods:
     * to make a public method private, prefix its name with a hash `#`. JavaScript allows us to define private methods for instance methods, static methods, and getter/setters.
     * can be called inside the class, not from outside of the class or in the subclasses.
