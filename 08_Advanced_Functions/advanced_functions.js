@@ -20,9 +20,9 @@ const say = function (message) {
 say.apply(cat, ['What does a cat say?']); // this object in the say() function references the cat object.
 say.apply(dog, ['What does a dog say?']); // this object in the say() function references the dog object.
 
-/* What does a cat sound?
+/* What does a cat say?
 Cat says Meow
-What does a dog sound?
+What does a dog say?
 Dog says Woof */
 
 // function call() method example
