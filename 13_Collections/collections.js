@@ -112,3 +112,69 @@ console.log(userRoles.size); // 2
 
 userRoles.clear();
 console.log(userRoles.size); // 0
+
+
+// creating Set object
+
+let chars = new Set(['a', 'a', 'b', 'c', 'c']);
+console.log(chars); // Set { 'a', 'b', 'c' }
+
+
+// getting the size of a Set
+
+let size = chars.size;
+console.log(size);//  3
+
+
+// adding elements to a Set
+
+chars.add('d');
+console.log(chars); // Set { 'a', 'b', 'c', 'd' }
+
+
+// check if a value is in the Set
+
+let exist = chars.has('a');
+console.log(exist);// true
+
+
+exist = chars.has('z');
+console.log(exist); // false
+
+
+// removing elements from a set
+
+chars.delete('f');
+console.log(chars); // Set {"a", "b", "c", "d", "e"}
+
+// deleting all elements from a set
+
+chars.clear();
+console.log(chars); // Set{}
+
+
+// looping the elements of a JavaScript Set
+
+let roles = new Set();
+roles.add('admin')
+    .add('editor')
+    .add('subscriber');
+
+for (let role of roles) {
+        console.log(role);
+} 
+/*
+admin
+editor
+subscriber
+*/
+
+// WeakSet example
+
+let computer = {type: 'laptop'};
+let server = {type: 'server'};
+let equipment = new WeakSet([computer, server]);
+
+if (equipment.has(server)) {
+    console.log('We have a server'); // We have a server
+}
