@@ -45,7 +45,5 @@ Outside the loop: 5
 
 // const keyword example
 
-let a = 10;
-a = 20;
-a = a + 5;
-console.log(a); // 25
+const RATE = 0.1;
+RATE = 0.2; // TypeError
