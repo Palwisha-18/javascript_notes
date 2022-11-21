@@ -75,6 +75,46 @@ console.log(`Total scores: ${sum}`); // Total scores: 14
 
 // async iterator example
 
+let range = {
+    from: 1,
+    to: 5,
+  
+    [Symbol.asyncIterator]() { 
+      return {
+        current: this.from,
+        last: this.to,
+  
+        async next() {
+  
+          // note: we can use "await" inside the async next:
+          await new Promise(resolve => setTimeout(resolve, 1000)); 
+  
+          if (this.current <= this.last) {
+            return { done: false, value: this.current++ };
+          } else {
+            return { done: true };
+          }
+        }
+      };
+    }
+  };
+  
+  (async () => {
+  
+    for await (let value of range) { 
+      alert(value);
+    }
+  
+  })()
+
+/*
+returns a sequence from 1 to 5 after every second
+1
+2
+3
+4
+5
+*/
 
 // async generator example
 
@@ -97,7 +137,7 @@ async function* asyncSequence(start, end) {
     }
 })();
 /*
-eturns a sequence from 1 to 5 after every second
+returns a sequence from 1 to 5 after every second
 1
 2
 3
