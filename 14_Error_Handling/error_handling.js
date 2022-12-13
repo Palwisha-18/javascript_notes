@@ -1,12 +1,12 @@
 // try...catch example
 
 try {
-    let result = add(10, 20);
-    console.log(result);
-  } catch (e) {
-    console.log({ name: e.name, message: e.message });
-  }
-  console.log('Bye');
+  let result = add(10, 20);
+  console.log(result);
+} catch (e) {
+  console.log({ name: e.name, message: e.message });
+}
+console.log('Bye');
 
 /*
 {name: 'TypeError', message: 'add is not a function'}
@@ -39,50 +39,50 @@ function fn() {
     } finally {
       return 3;
     }
-  }
+}
   
-  console.log(fn()); // 3
+console.log(fn()); // 3
 
 
-  // throw statement to throw an exception
+// throw statement to throw an exception
 
-  function add(x, y) {
-    if (typeof x !== 'number') {
-      throw 'The first argument must be a number';
-    }
-    if (typeof y !== 'number') {
-      throw 'The second argument must be a number';
-    }
-  
-    return x + y;
+function add(x, y) {
+  if (typeof x !== 'number') {
+    throw 'The first argument must be a number';
   }
-  
-  try {
-    const result = add('a', 10);
-    console.log(result);
-  } catch (e) {
-    console.log(e); // The first argument must be a number
+  if (typeof y !== 'number') {
+    throw 'The second argument must be a number';
   }
-  
+
+  return x + y;
+}
+
+try {
+  const result = add('a', 10);
+  console.log(result);
+} catch (e) {
+  console.log(e); // The first argument must be a number
+}
+
 // throw statement to throw an instance of the Error class
 
 function add(x, y) {
-    if (typeof x !== 'number') {
-      throw new Error('The first argument must be a number');
-    }
-    if (typeof y !== 'number') {
-      throw new Error('The second argument must be a number');
-    }
-  
-    return x + y;
+  if (typeof x !== 'number') {
+    throw new Error('The first argument must be a number');
   }
-  
-  try {
-    const result = add('a', 10);
-    console.log(result);
-  } catch (e) {
-    console.log(e.name, ':', e.message); // Error : The first argument must be a number
+  if (typeof y !== 'number') {
+    throw new Error('The second argument must be a number');
   }
+
+  return x + y;
+}
+
+try {
+  const result = add('a', 10);
+  console.log(result);
+} catch (e) {
+  console.log(e.name, ':', e.message); // Error : The first argument must be a number
+}
   
 
 // throw statement to throw a user-defined exception
@@ -108,8 +108,8 @@ function add(x, y) {
 }
 
 try {
-    const result = add('a', 10);
-    console.log(result);
-  } catch (e) {
-    console.log(e.name, ':', e.message); // NumberError : "a" is not a valid number
-  }
+  const result = add('a', 10);
+  console.log(result);
+} catch (e) {
+  console.log(e.name, ':', e.message); // NumberError : "a" is not a valid number
+}

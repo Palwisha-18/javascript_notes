@@ -9,17 +9,17 @@ function getUsers() {
         ]);
       }, 1000);
     });
-  }
+}
   
-  const promise = getUsers();
-  
-  promise.then((users) => {
-    console.log(users);
-  });
-  /* 
-  [
-  { username: 'john', email: 'john@test.com' },
-  { username: 'jane', email: 'jane@test.com' }
+const promise = getUsers();
+
+promise.then((users) => {
+console.log(users);
+});
+/* 
+[
+{ username: 'john', email: 'john@test.com' },
+{ username: 'jane', email: 'jane@test.com' }
 ]
 */
 
@@ -70,26 +70,26 @@ const p1 = new Promise((resolve, reject) => {
       console.log('The first promise has resolved');
       resolve(10);
     }, 1 * 1000);
-  });
-  const p2 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log('The second promise has resolved');
-      resolve(20);
+});
+const p2 = new Promise((resolve, reject) => {
+setTimeout(() => {
+    console.log('The second promise has resolved');
+    resolve(20);
     }, 2 * 1000);
-  });
-  const p3 = new Promise((resolve, reject) => {
-    setTimeout(() => {
-      console.log('The third promise has resolved');
-      resolve(30);
+});
+const p3 = new Promise((resolve, reject) => {
+setTimeout(() => {
+    console.log('The third promise has resolved');
+    resolve(30);
     }, 3 * 1000);
-  });
-  
-  Promise.all([p1, p2, p3]).then((results) => {
+});
+
+Promise.all([p1, p2, p3]).then((results) => {
     const total = results.reduce((p, c) => p + c);
-  
+
     console.log(`Results: ${results}`);
     console.log(`Total: ${total}`);
-  });
+});
 
 /*
 The first promise has resolved
@@ -169,20 +169,20 @@ const p1 = new Promise((resolve, reject) => {
       console.log('Promise 1 rejected');
       reject('error');
     }, 1000);
-  });
+});
   
-  const p2 = new Promise((resolve, reject) => {
+const p2 = new Promise((resolve, reject) => {
     setTimeout(() => {
       console.log('Promise 2 fulfilled');
       resolve(2);
     }, 2000);
-  });
+});
   
-  const p = Promise.any([p1, p2]);
-  p.then((value) => {
+const p = Promise.any([p1, p2]);
+p.then((value) => {
     console.log('Returned Promise');
     console.log(value);
-  });
+});
 
 /*
 Promise 1 rejected

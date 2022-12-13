@@ -31,9 +31,9 @@ function add( a, b ) {
     return a + b;
  }
  
- export { add as sum }; // exporting add function as sum
+export { add as sum }; // exporting add function as sum
  
- // re-exporting a binding
+// re-exporting a binding
 
 import { sum } from './math.js';
 export { sum };

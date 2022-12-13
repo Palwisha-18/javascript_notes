@@ -97,15 +97,15 @@ let range = {
         }
       };
     }
-  };
+};
   
-  (async () => {
+(async () => {
   
     for await (let value of range) { 
       alert(value);
     }
   
-  })()
+})()
 
 /*
 returns a sequence from 1 to 5 after every second
