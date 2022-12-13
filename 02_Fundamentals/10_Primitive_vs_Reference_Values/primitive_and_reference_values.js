@@ -31,9 +31,9 @@ let person = {
     age: 25,
   };
   
-  let member = person;
+let member = person;
   
-  member.age = 26;
+member.age = 26;
   
-  console.log(person.age);  // 26
-  console.log(member.age);  // 26
+console.log(person.age);  // 26
+console.log(member.age);  // 26

@@ -49,35 +49,35 @@ let power = {
     valueOf() {
       return 1000;
     },
-  };
-  
-  let currentPower = power - 100; // 900
-  console.log(currentPower);
-  
-  currentPower = power + 100; // 1100
-  console.log(currentPower);
-  
-  currentPower = power / 2; // 500
-  console.log(currentPower);
-  
-  currentPower = power * 1.5; 
-  console.log(currentPower); // 1500
+};
+
+let currentPower = power - 100; // 900
+console.log(currentPower);
+
+currentPower = power + 100; // 1100
+console.log(currentPower);
+
+currentPower = power / 2; // 500
+console.log(currentPower);
+
+currentPower = power * 1.5; 
+console.log(currentPower); // 1500
 
 
-  let power = {
-    toString() {
-      return 1000;
-    },
-  };
-  
-  let currentPower = power - 100; // 900
-  console.log(currentPower);
-  
-  currentPower = power + 100; // 1100
-  console.log(currentPower);
-  
-  currentPower = power / 2; // 500
-  console.log(currentPower);
-  
-  currentPower = power * 1.5; 
-  console.log(currentPower); // 1500
+let power = {
+  toString() {
+    return 1000;
+  },
+};
+
+let currentPower = power - 100; // 900
+console.log(currentPower);
+
+currentPower = power + 100; // 1100
+console.log(currentPower);
+
+currentPower = power / 2; // 500
+console.log(currentPower);
+
+currentPower = power * 1.5; 
+console.log(currentPower); // 1500

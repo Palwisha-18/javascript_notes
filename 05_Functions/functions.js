@@ -78,18 +78,18 @@ function compareBy(propertyName) {
       }
     };
   }
-  let products = [
-    { name: 'iPhone', price: 900 },
-    { name: 'Samsung Galaxy', price: 850 },
-    { name: 'Sony Xperia', price: 700 },
-  ];
-  
-  // sort products by name
-  console.log('Products sorted by name:');
-  products.sort(compareBy('name'));
-  
-  console.table(products);
-  
+let products = [
+  { name: 'iPhone', price: 900 },
+  { name: 'Samsung Galaxy', price: 850 },
+  { name: 'Sony Xperia', price: 700 },
+];
+
+// sort products by name
+console.log('Products sorted by name:');
+products.sort(compareBy('name'));
+
+console.table(products);
+
 /*
 
 Products sorted by name:

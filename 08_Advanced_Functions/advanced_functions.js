@@ -133,13 +133,13 @@ function filter(numbers, callback) {
       }
     }
     return results;
-  }
-  
-  let numbers = [1, 2, 4, 7, 3, 5, 6];
-  
-  let oddNumbers = filter(numbers, function (number) {
-    return number % 2 != 0;
-  });
-  
-  console.log(oddNumbers); // 1, 7, 3, 5
+}
+
+let numbers = [1, 2, 4, 7, 3, 5, 6];
+
+let oddNumbers = filter(numbers, function (number) {
+return number % 2 != 0;
+});
+
+console.log(oddNumbers); // 1, 7, 3, 5
   
